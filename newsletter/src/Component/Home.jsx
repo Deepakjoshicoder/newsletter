@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Desk from './../assets/images/illustration-sign-up-desktop.svg'
 import iconlist from './../assets/images/icon-list.svg'
 
+
 const Home = ({setisSubmitted}) => {
 	const [emailVal,setEmailVal]=useState("");
 	const validate = ()=>{
@@ -9,18 +10,19 @@ const Home = ({setisSubmitted}) => {
 	}
   return (
     <div className='bg-[#36384D] h-screen  w-screen flex justify-center items-center'>
-		<div className=' bg-white w-[50%] h-[60%] rounded-xl flex justify-between p-5'>
-			<div>
-			<p className='text-2xl'>Stay updated!</p>
-			<p>Join 60,000+ product managers receiving monthly <br /> updates on:</p>
-			<p className='flex'><img src={iconlist} alt="" /> Product discovery and building what matters</p>
-			<p className='flex'><img src={iconlist} alt="" /> Measuring to ensure updates are a success</p>
-			<p className='flex'><img src={iconlist} alt="" /> Add much more!</p>
-			<p>Email address</p>
-			<input type="text" value={emailVal} onChange={e=>setEmailVal(e.target.value)} />
-			<button onClick={validate}>Submit</button>
+		<div className=' bg-white w-[58%] h-[70%] rounded-xl flex justify-between p-5 font-rob'>
+			<div className='p-10'>
+				<p className='text-[45px] font-bold mb-3'>Stay updated!</p>
+				<p className='text-[16px] mb-3'>Join 60,000+ product managers receiving monthly <br /> updates on:</p>
+				<p className='flex text-[16px] mb-3 '><img src={iconlist} alt="" /><p className='ml-2'>Product discovery and building what matters</p></p>
+				<p className='flex text-[16px] mb-3'><img src={iconlist} alt="" /> <p className='ml-2'>Measuring to ensure updates are a success</p></p>
+				<p className='flex text-[16px] mb-8'><img src={iconlist} alt="" /> <p className='ml-2'>Add much more!</p> </p>
+				<p className='text-[11px] font-bold mb-2'>Email address</p>
+				<input className='rounded-md h-10 w-[350px] p-5 mb-5' placeholder='Enter Email Address' type="text" value={emailVal} onChange={e=>setEmailVal(e.target.value)} />
+				<br />
+				<button className='bg-[#232742] border-b-slate-800 rounded-md h-10 w-[350px] text-white text-[16px]' onClick={validate}>Subscribe to monthly newsletter</button>
 			</div>
-			<img src={Desk} alt="" />
+			<img className=" " src={Desk} alt="" />
 		</div>
 		
     </div>
