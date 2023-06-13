@@ -13,7 +13,7 @@ const App = () => {
       {
         isSubmitted ? <Thanks/> : <Home setisSubmitted={setisSubmitted}/>
       }
-
+      
       </>
     </>
   )

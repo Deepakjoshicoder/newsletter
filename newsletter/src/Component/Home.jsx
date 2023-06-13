@@ -10,19 +10,19 @@ const Home = ({setisSubmitted}) => {
 	}
   return (
     <div className='bg-[#36384D] h-screen  w-screen flex justify-center items-center'>
-		<div className=' bg-white w-[58%] h-[70%] rounded-xl flex justify-between p-5 font-rob'>
-			<div className='p-10'>
+		<div className=' bg-white w-[50%] h-[70%] rounded-3xl flex justify-between p-5 font-rob'>
+			<div className='pt-10 pl-5'>
 				<p className='text-[45px] font-bold mb-3'>Stay updated!</p>
-				<p className='text-[16px] mb-3'>Join 60,000+ product managers receiving monthly <br /> updates on:</p>
-				<p className='flex text-[16px] mb-3 '><img src={iconlist} alt="" /><p className='ml-2'>Product discovery and building what matters</p></p>
-				<p className='flex text-[16px] mb-3'><img src={iconlist} alt="" /> <p className='ml-2'>Measuring to ensure updates are a success</p></p>
-				<p className='flex text-[16px] mb-8'><img src={iconlist} alt="" /> <p className='ml-2'>Add much more!</p> </p>
+				<p className='text-sm mb-3'>Join 60,000+ product managers receiving monthly <br /> updates on:</p>
+				<p className='flex text-sm mb-3 '><img src={iconlist} alt="" /><p className='ml-2'>Product discovery and building what matters</p></p>
+				<p className='flex text-sm mb-3'><img src={iconlist} alt="" /> <p className='ml-2'>Measuring to ensure updates are a success</p></p>
+				<p className='flex text-sm mb-8'><img src={iconlist} alt="" /> <p className='ml-2'>Add much more!</p> </p>
 				<p className='text-[11px] font-bold mb-2'>Email address</p>
-				<input className='rounded-md h-10 w-[350px] p-5 mb-5' placeholder='Enter Email Address' type="text" value={emailVal} onChange={e=>setEmailVal(e.target.value)} />
+				<input className='border border-slate-800 rounded-md h-10 w-[100%] p-5 mb-5' placeholder='Enter Email Address' type="text" value={emailVal} onChange={e=>setEmailVal(e.target.value)} />
 				<br />
-				<button className='bg-[#232742] border-b-slate-800 rounded-md h-10 w-[350px] text-white text-[16px]' onClick={validate}>Subscribe to monthly newsletter</button>
+				<button className='bg-[#232742] border-b-slate-800 rounded-md h-10 w-[100%] text-white text-sm' onClick={validate}>Subscribe to monthly newsletter</button>
 			</div>
-			<img className=" " src={Desk} alt="" />
+			<img className="" src={Desk} alt="" />
 		</div>
 		
     </div>
